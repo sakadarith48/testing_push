@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #050510;
+    color: #FCF8F7;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* SCHOOL BLOCK (logo + name together) */
+.school-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+/* LOGO */
+.school-block img {
+    width: 200px;
+
+    object-fit: cover;
+}
+
+/* NAME UNDER LOGO */
+.school-block p {
+    margin-top: 8px;
+
+    font-size: 26px;
+    font-weight: bold;
+    color: #1da96d;
+    letter-spacing: 1px;
+    animation: blinkColor2 2s infinite;
+}
+
+/* TITLE */
+.header h1 {
+    font-size: 36px;
+    color: #FCF8F7;
+}
+
+/* ================= MAIN ================= */
+
+.about-contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* CARD STYLE */
+.card,
+.about-box,
+.contact-box {
+    width: 500px;
+
+    background: rgba(8, 15, 35, .4);
+    border: 1px solid rgba(0, 124, 191, .3);
+
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 124, 191, .15);
+}
+
+.card:hover,
+.about-box:hover,
+.contact-box:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* PROFILE */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 140px;
+    border-radius: 50%;
+    border: 2px solid #007cbf;
+    margin: 10px 0;
+}
+
+.profile span {
+    display: block;
+    margin-top: 10px;
+    color: #007cbf;
+}
+
+.profile span b {
+    display: block;
+    margin-top: 10px;
+    color: #007cbf;
+    animation: blinkColor 2s infinite;
+}
+
+/* TEXT */
+h2 {
+    color: #007cbf;
+    margin-bottom: 10px;
+    animation: blinkColor 2s infinite;
+}
+
+p {
+    line-height: 1.6;
+    opacity: .9;
+}
+
+@keyframes blinkColor {
+    0% {
+        color: #007cbf;
+    }
+
+    50% {
+        color: #FCF8F7;
+    }
+
+    100% {
+        color: #007cbf;
+    }
+}
+
+@keyframes blinkColor2 {
+    0% {
+        color: #1da96d;
+    }
+
+    50% {
+        color: #FCF8F7;
+    }
+
+    100% {
+        color: #1da96d;
+    }
+}
+
+.back-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    text-decoration: none;
+    color: #FCF8F7;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: rgba(8, 15, 35, 0.4);
+    border: 1px solid rgba(0,124,191,.4);
+    border-radius: 30px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-btn:hover{
+    background: #007cbf;
+    color: #050510;
+
+    box-shadow: 0 0 15px rgba(0,124,191,.6);
+
+    transform: translateY(-2px);
+}
+
+.back-btn i{
+    font-size: 14px;
+}
