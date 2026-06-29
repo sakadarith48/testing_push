@@ -77,6 +77,7 @@ body {
     width: 100%;
 }
 
+
 /* ================= HOME ================= */
 
 .home {
@@ -218,4 +219,21 @@ body {
 
 .map-container img {
     margin-bottom: 20px;
+}
+
+.footer {
+    height: auto;
+    background-color: rgba(0, 124, 191, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+    color: #FCF8F7;
 }

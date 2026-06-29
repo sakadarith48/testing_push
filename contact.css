@@ -71,7 +71,7 @@ body {
 
     background: rgba(8, 15, 35, .4);
     border: 1px solid rgba(0, 124, 191, .3);
-
+    cursor: pointer;
     border-radius: 20px;
     padding: 25px;
     transition: 0.3s;
@@ -151,7 +151,7 @@ p {
     }
 }
 
-.back-btn{
+.back-btn {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -168,7 +168,7 @@ p {
     font-weight: 600;
 
     background: rgba(8, 15, 35, 0.4);
-    border: 1px solid rgba(0,124,191,.4);
+    border: 1px solid rgba(0, 124, 191, .4);
     border-radius: 30px;
 
     backdrop-filter: blur(10px);
@@ -177,15 +177,32 @@ p {
     z-index: 1000;
 }
 
-.back-btn:hover{
+.back-btn:hover {
     background: #007cbf;
     color: #050510;
 
-    box-shadow: 0 0 15px rgba(0,124,191,.6);
+    box-shadow: 0 0 15px rgba(0, 124, 191, .6);
 
     transform: translateY(-2px);
 }
 
-.back-btn i{
+.back-btn i {
     font-size: 14px;
+}
+
+.footer {
+    height: auto;
+    background-color: rgba(0, 124, 191, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+    color: #FCF8F7;
 }
